@@ -62,7 +62,7 @@ Bitwarden inclou un **generador de contrasenyes** configurable per crear claus r
 4. Feu clic a **“Regenerate”** fins a obtenir una contrasenya que compleixi les polítiques de seguretat internes.
 5. Feu clic a **“Copy”** o **“Save”** per desar-la directament en un element nou.
 
-![Generar contraseña](./img/generar_contraseña.png)
+![Generar contraseña](./img/generar_contraseña.png)
 
 ---
 
