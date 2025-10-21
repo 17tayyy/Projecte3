@@ -21,6 +21,8 @@ L’objectiu és garantir que tot el personal tècnic pugui emmagatzemar i gesti
 4. Accepteu els termes i feu clic a **“Submit”**.  
 5. Rebreu un correu de verificació. Feu clic a l’enllaç per activar el compte.
 
+![Crear Compte](./img/crear_compte.png)
+
 ⚠️ **Important:** La *contrasenya mestra* no es pot recuperar. Si es perd, s’hauran de restablir totes les dades.
 
 ---
@@ -40,6 +42,7 @@ L’objectiu és garantir que tot el personal tècnic pugui emmagatzemar i gesti
 2. Busqueu **“Bitwarden Password Manager”** al repositori d’extensions.  
 3. Feu clic a **“Afegeix al navegador”** i inicieu sessió.  
 4. L’icona de Bitwarden apareixerà a la barra d’eines per accedir ràpidament a les credencials i l’autocompletat.
+![Afegir Extensió](./img/afegir_extensio.png)
 
 ---
 
@@ -58,6 +61,8 @@ Bitwarden inclou un **generador de contrasenyes** configurable per crear claus r
    - Incloure **majúscules, números i caràcters especials**
 4. Feu clic a **“Regenerate”** fins a obtenir una contrasenya que compleixi les polítiques de seguretat internes.
 5. Feu clic a **“Copy”** o **“Save”** per desar-la directament en un element nou.
+
+![Generar contraseña](./img/generar_contraseña.png)
 
 ---
 
