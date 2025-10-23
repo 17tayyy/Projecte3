@@ -109,7 +109,7 @@ Bitwarden inclou un **generador de contrasenyes** configurable per crear claus r
 3. Introduïu la vostra contrasenya mestra per autoritzar l’exportació.  
 4. Deseu l’arxiu resultant en un dispositiu segur.
 
-![Exportar Vault](./img/exportar_vault.png)
+![Exportar Vault](./img/export_vault.png)
 
 ---
 
