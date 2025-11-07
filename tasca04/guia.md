@@ -12,9 +12,11 @@
 
 ![image34](img/image34.png)
 
-## Escribim el domini server.innovatechXX.test  
+## Escribim el domini server.innovatechXX.test  que XX es el nostre numero de llista
 
 ![image11](img/image11.png)
+
+## Després 
 
 
 ![image1](img/image1.png)
