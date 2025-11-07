@@ -55,17 +55,9 @@ nslookup té un mode interactiu (prompt >). Ús bàsic:
   - `tecnocampus.cat`
   Anàlisi: Quines diferències s'observen respecte la comanda 5? (registre autoritatiu, temps de resposta, secció ADDITIONAL, etc.)
 
-## Resolucions locals
+## Entrega: ![guia.md](./guia.md)
 
-Incloure proves de resolució local per verificar funcionament en xarxa sense servidor DNS extern:
-- Comprovació de /etc/hosts (o C:\Windows\System32\drivers\etc\hosts): afegir entrada de prova i fer ping/dig.
-- Prova amb un DNS local (si n'hi ha): `dig @localhost example.com`
-- Proves mDNS/Bonjour si disponibles: `ping hostname.local` o `avahi-resolve`.
-- Comprovacions de caché del sistema i com es neteja (ex.: `sudo systemd-resolve --flush-caches` o `ipconfig /flushdns` a Windows).
-
-## Entrega: guia.md
-
-Crear un fitxer !(`guia.md`)[./guia.md] amb:
+Crear un fitxer ![`guia.md`](./guia.md) amb:
 - Les 6 captures (o sortides textuals) de les comandes anteriors.
 - Les respostes d'anàlisi per a cada comanda (concises i tècniques).
 - Resultats de les proves de resolució local i conclusions breus sobre el comportament observat.
