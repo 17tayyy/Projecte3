@@ -1,86 +1,224 @@
-# Guia LDAP
+# 📘 Guia LDAP
 
-## Primer configurem els adaptadors de xarxa amb netplan.
+## 🖥️ Servidor (Ubuntu Server)
 
-![image20](img/image20.png)
+---
 
-## Configurem el segon adaptador de xarxa amb dhcp4 activat,
+### 🔧 Configurem els adaptadors de xarxa amb netplan
 
-![image25](img/image25.png)
+![image20](img/image19.png)
 
-## Ara configurem el hostname i el domini per el servidor, obrim el /etc/hosts
+---
 
-![image34](img/image34.png)
+### 🔧 Configurem el segon adaptador amb DHCP4 activat i apliquem canvis
 
-## Escribim el domini server.innovatechXX.test  que XX es el nostre numero de llista
+![image25](img/image22.png)
 
-![image11](img/image11.png)
+---
 
-## Després 
+### 🌐 Escribim el domini server.innovatechXX.test (XX és el número de llista)
 
+![image11](img/image12.png)
 
-![image1](img/image1.png)
+---
 
-![image2](img/image2.png)
+### 🏷️ Posem el hostname
 
-![image3](img/image3.png)
+![image1](img/image53.png)
 
-![image4](img/image4.png)
+---
 
-![image5](img/image5.png)
+### 📦 Instal·lem slapd i ldap-utils
 
-![image6](img/image6.png)
+![image3](img/image32.png)
+![image2](img/image49.png)
 
-![image7](img/image7.png)
+---
 
-![image8](img/image8.png)
+### ✔️ Comprovem que el servei slapd funciona
 
-![image9](img/image9.png)
+![image2](img/image44.png)
 
-![image10](img/image10.png)
+---
 
-![image12](img/image12.png)
+### 🔑 Configurem la contrasenya de slapd
 
-![image13](img/image13.png)
+![image4](img/image31.png)
 
-![image14](img/image14.png)
+---
 
-![image15](img/image15.png)
+### ✔️ Verifiquem que la configuració s’ha aplicat correctament
 
-![image16](img/image16.png)
+![image2](img/image48.png)
 
-![image17](img/image17.png)
+---
 
-![image18](img/image18.png)
+### 🗂️ Creem els arxius OU d’usuaris i els afegim a LDAP
 
-![image19](img/image19.png)
+![image2](img/image16.png)
+![image5](img/image7.png)
+![image2](img/image43.png)
 
+---
 
-![image21](img/image21.png)
+### 🗂️ Fem el mateix amb els grups
 
-![image22](img/image22.png)
+![image2](img/image45.png)
+![image2](img/image45.png)
 
-![image23](img/image23.png)
+---
 
-![image24](img/image24.png)
+### 🔍 Fem una cerca amb ldapsearch per verificar que tot funciona
 
-![image26](img/image26.png)
+![image2](img/image34.png)
 
-![image27](img/image27.png)
+---
 
-![image28](img/image28.png)
+### 📦 Instal·lem LDAP Account Manager
 
-![image29](img/image29.png)
+![image2](img/image27.png)
 
-![image30](img/image30.png)
+---
 
-![image31](img/image31.png)
+### 🌐 Obrim la web del LAM i accedim a /lam/templates/login.php
 
-![image32](img/image32.png)
+![image2](img/image29.png)
 
-![image33](img/image33.png)
+---
 
-![image35](img/image35.png)
+### 🔐 Entrem amb el LAM configurat
 
-![image36](img/image36.png)
+![image2](img/image6.png)
 
+---
+
+### ⚙️ Configurem l’account manager
+
+![image2](img/image40.png)
+![image2](img/image5.png)
+![image2](img/image33.png)
+
+---
+
+### 🔑 Accedim com administrador
+
+![image2](img/image20.png)
+
+---
+
+### ➕ Creem el perfil quan ens aparegui el missatge
+
+![image2](img/image28.png)
+
+---
+
+### 👥 Ara creem els grups i usuaris
+
+![image2](img/image4.png)
+![image2](img/image42.png)
+![image2](img/image21.png)
+![image2](img/image50.png)
+![image2](img/image26.png)
+![image2](img/image39.png)
+
+---
+
+# 🖥️ Client
+
+---
+
+### 🔄 Actualitzem el sistema
+
+![image2](img/image46.png)
+
+---
+
+### 🏷️ Configurem el hostname i el domini al fitxer /etc/hosts
+
+#### Domini
+![image34](img/image14.png)
+![image34](img/image56.png)
+
+#### Hostname
+![image34](img/image2.png)
+
+---
+
+### ✔️ Comprovem que els canvis s’han aplicat
+
+![image34](img/image18.png)
+
+---
+
+### 🌐 Fem un dig per assegurar que el servidor respon
+
+![image34](img/image52.png)
+
+---
+
+### 📦 Instal·lem les utilitats LDAP al client
+
+![image34](img/image17.png)
+
+---
+
+### ⚙️ Configurem LDAP en finalitzar la instal·lació
+
+![image34](img/image9.png)
+![image4](img/image54.png)
+![image34](img/image35.png)
+![image34](img/image36.png)
+![image34](img/image1.png)
+
+---
+
+### 🔍 Fem un ldapsearch des del client
+
+![image34](img/image57.png)
+
+---
+
+# 🔐 Integració PAM i NSS
+
+---
+
+### 🧩 Modifiquem nsswitch per fer servir LDAP
+
+![image7](img/image30.png)
+![image7](img/image13.png)
+
+---
+
+### 🔧 Modifiquem /etc/pam.d/common-password (eliminem use_authok)
+
+![image7](img/image51.png)
+![image7](img/image37.png)
+
+---
+
+### 🧩 Modifiquem /etc/pam.d/common-session per crear perfils automàticament
+
+![image7](img/image51.png)
+![image7](img/image10.png)
+
+---
+
+### 👤 Comprovem que s’han creat els usuaris
+
+![image7](img/image23.png)
+
+---
+
+### 📝 Modifiquem gdm-launch-environment per permetre login amb usuaris LDAP
+
+![image7](img/image41.png)
+
+---
+
+### 🔐 Provem el login amb l’usuari tech01 de LDAP
+
+![image7](img/image38.png)
+
+---
+
+# ✅ Ja ens podem loguejar — Finalitzat!
